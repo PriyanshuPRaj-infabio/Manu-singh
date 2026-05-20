@@ -11,7 +11,7 @@ const testimonials = [
     location: 'London, UK',
     journey: 'Heritage Honeymoon',
     text: <><BrandName short /> gave us the India we never knew existed. Beyond the tourist trail, we found authentic connections and moments that will stay with us forever.</>,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700&q=80',
+    image: 'https://c8.alamy.com/comp/3A1J0B0/foreigner-couple-navalgrah-rajasthan-india-asia-3A1J0B0.jpg',
     backdrop: 'https://images.pexels.com/photos/9179927/pexels-photo-9179927.jpeg?auto=compress&cs=tinysrgb&w=1200',
   },
   {
@@ -149,11 +149,10 @@ export default function Testimonials() {
                   type="button"
                   onClick={() => setActiveIndex(index)}
                   whileHover={{ y: -6 }}
-                  className={`rounded-[1.4rem] border p-4 text-left shadow-luxury transition duration-300 ${
-                    activeIndex === index
+                  className={`rounded-[1.4rem] border p-4 text-left shadow-luxury transition duration-300 ${activeIndex === index
                       ? 'border-amber-300/45 bg-amber-300/14'
                       : 'border-white/10 bg-white/[0.045] hover:border-amber-300/25'
-                  }`}
+                    }`}
                 >
                   <p className="text-[10px] uppercase tracking-[0.28em] text-amber-200/70">{testimonial.location}</p>
                   <p className="mt-2 text-xl font-semibold text-white">{testimonial.name}</p>
