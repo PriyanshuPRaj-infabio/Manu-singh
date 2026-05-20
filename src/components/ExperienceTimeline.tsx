@@ -12,7 +12,7 @@ const timeline = [
       'Begin with intimate artisan encounters, private heritage kitchens and immersive local stories from potters, block printers, and weavers.',
     tag: 'Day 1-2',
     icon: Flame,
-    image: 'https://images.pexels.com/photos/2385044/pexels-photo-2385044.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://images.unsplash.com/photo-1639575668829-7e59e0195b06?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     imageAlt: 'Rajasthani elder with traditional red turban',
   },
   {
@@ -152,11 +152,10 @@ export default function ExperienceTimeline() {
                     onMouseEnter={() => setActiveIndex(index)}
                     onFocus={() => setActiveIndex(index)}
                     onClick={() => setActiveIndex(index)}
-                    className={`group relative w-full overflow-hidden rounded-[1.7rem] border p-5 text-left shadow-luxury transition duration-300 md:p-7 ${
-                      isActive
+                    className={`group relative w-full overflow-hidden rounded-[1.7rem] border p-5 text-left shadow-luxury transition duration-300 md:p-7 ${isActive
                         ? 'border-amber-300/35 bg-amber-300/12'
                         : 'border-white/10 bg-white/[0.045] hover:border-amber-300/25 hover:bg-white/[0.07]'
-                    }`}
+                      }`}
                   >
                     <div className="absolute -left-[3.25rem] top-7 hidden h-12 w-12 items-center justify-center rounded-full border border-amber-200/30 bg-[#070912] text-amber-200 md:flex">
                       {item.step}

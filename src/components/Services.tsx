@@ -52,7 +52,7 @@ const services = [
       'Meet weavers, potters, chefs and historians. These authentic encounters become the heartbeat of your journey.',
     tag: 'Authentic',
     type: 'People',
-    image: 'https://images.pexels.com/photos/2385044/pexels-photo-2385044.jpeg?auto=compress&cs=tinysrgb&w=900',
+    image: 'https://images.unsplash.com/photo-1587538015441-75c593fbcafa?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     imageAlt: 'Elderly Rajasthani man with red turban — photo by Nishant Aneja',
     span: 'lg:col-span-1',
   },
@@ -219,11 +219,10 @@ export default function Services() {
               key={filter}
               type="button"
               onClick={() => setActiveFilter(filter)}
-              className={`rounded-full border px-5 py-2 text-sm transition duration-300 ${
-                activeFilter === filter
+              className={`rounded-full border px-5 py-2 text-sm transition duration-300 ${activeFilter === filter
                   ? 'border-amber-300/50 bg-amber-300/15 text-amber-100'
                   : 'border-white/10 bg-white/[0.035] text-white/56 hover:border-amber-300/25 hover:text-white'
-              }`}
+                }`}
             >
               {filter}
             </button>

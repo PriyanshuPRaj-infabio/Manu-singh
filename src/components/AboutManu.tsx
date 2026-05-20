@@ -52,7 +52,6 @@ export default function AboutManu() {
 
   const portraitY = useTransform(scrollYProgress, [0, 1], [-30, 36]);
   const stampY = useTransform(scrollYProgress, [0, 1], [48, -48]);
-  const routeLength = useTransform(scrollYProgress, [0.12, 0.62], [0, 1]);
 
   return (
     <section
@@ -114,7 +113,7 @@ export default function AboutManu() {
               className="absolute inset-x-0 top-6 overflow-hidden rounded-[2rem] border border-white/10 shadow-cinematic"
             >
               <img
-                src="https://media.istockphoto.com/id/2187592637/photo/happy-indian-mature-man-holding-digital-tablet.jpg?s=612x612&w=0&k=20&c=WxA52t6UTzYmyerEJl5DLosEGaM5ijeWCq2pMVGWcQg="
+                src="/manu_singh.png"
                 alt="Rajasthani storyteller portrait representing Manu Singh's cultural roots"
                 className="h-[700px] w-full object-cover lg:h-[760px]"
               />
@@ -139,18 +138,6 @@ export default function AboutManu() {
                 <BrandName short /> opens doors that traditional travel cannot reach.
               </p>
             </motion.div>
-
-            <svg className="absolute inset-0 z-10 hidden h-full w-full lg:block" viewBox="0 0 520 860" preserveAspectRatio="none">
-              <motion.path
-                d="M74 132 C184 88 262 186 246 302 C230 442 390 472 414 612"
-                fill="none"
-                stroke="rgba(251,191,36,0.45)"
-                strokeDasharray="8 16"
-                strokeLinecap="round"
-                strokeWidth="3"
-                style={{ pathLength: routeLength }}
-              />
-            </svg>
           </motion.div>
 
           <div className="space-y-8">
