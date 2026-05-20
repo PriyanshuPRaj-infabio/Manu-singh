@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Great_Vibes } from "next/font/google";
+import { Cormorant_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import AnimationProvider from "@/components/providers/AnimationProvider";
@@ -20,10 +20,11 @@ const cursiveBody = Cormorant_Garamond({
   style: ["italic", "normal"],
 });
 
-const greatVibes = Great_Vibes({
+const playfair = Playfair_Display({
   variable: "--font-logo",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600"],
+  style: ["italic", "normal"],
 });
 
 export const metadata: Metadata = {
@@ -93,7 +94,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${cursiveBody.variable} ${greatVibes.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${cursiveBody.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <SmoothScroll />
